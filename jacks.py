@@ -1,11 +1,11 @@
-import jacks
+import jacks_source
 import timeit
 runtumestart = timeit.default_timer()
 times = []
 for i in range(10):
     try:
         startTime = timeit.default_timer()
-        jacks.jacks()
+        jacks_source.jacks()
         endTime = timeit.default_timer()
         times.append((endTime - startTime))
     except IndexError:
